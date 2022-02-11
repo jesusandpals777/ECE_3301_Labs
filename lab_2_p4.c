@@ -19,14 +19,14 @@ void main(){
     TRISA = 0xff;               // Digital input pin
     TRISB = 0x00;               // Digital output pin
     TRISC =0x00;
-    TRISD = 0xff;
+    TRISD = 0x00;
     PORTB = 0x00;
     ADCON1 = 0x0f;              // Analog to Digital converter          
     while(1){                   
         for (char i = 0; i < 8; i++){
             PORTC = in;
             Delay_One_Sec();
-            PORTD = in;
+            PORTD = (7-i);
         }
     }
 }
