@@ -27,7 +27,7 @@ void main(){
             PORTC = in;
             Delay_One_Sec();
             //PORTD = (7-i);
-            // Changed it to PORTC since We already assigned it to PORTC
+            // Changed it to PORTC since We already assigned i to PORTC
             PORTD = (7-PORTC);
         }
     }
