@@ -26,7 +26,9 @@ void main(){
         for (char i = 0; i < 8; i++){
             PORTC = in;
             Delay_One_Sec();
-            PORTD = (7-i);
+            //PORTD = (7-i);
+            // Changed it to PORTC since We already assigned it to PORTC
+            PORTD = (7-PORTC);
         }
     }
 }
